@@ -1,0 +1,32 @@
+<h1>Add New Cat</h1>
+<!--action: url to which with want to send data   -->
+<!-- method: http method we want to use  -->
+<form action="/cats" method="post">
+  <label for="name">Name</label>
+  <input id="name" type="text" name="cat[name]"> <!--points to the attribute-->
+  <br>
+
+  <label for="sex">Sex</label>
+   <button type="button" name="cat[sex]">F</button>
+   <button type="button" name="cat[sex]">M</button>
+  <br>
+
+   <label for="color">Color</label>
+   <select id="color" name="cat[color]">
+    <option disabled selected>--Please select a color--</option>
+    <%  %>
+    <option value="black">Black</option>
+    <option value="yellow">Yellow</option>
+    <option value="White">White</option>
+   </select>
+
+  <br>
+
+  <label for="birth_date">Birth Date</label>
+  <input id="birth_date" type="date" name="cat[birth_date]">
+  <br><br>
+
+   <label for="description">Description</label>
+   <textarea name="cat[description]"></textarea>
+  <input type="submit" value="Add new cat">
+</form>
