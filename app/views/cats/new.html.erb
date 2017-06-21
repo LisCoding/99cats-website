@@ -1,19 +1,21 @@
 <h1>Add New Cat</h1>
+<%= render 'form', action: :new, cat: @cat %>
+
 <!--action: url to which with want to send data   -->
 <!-- method: http method we want to use  -->
-<form action="/cats" method="post">
+<!-- <form action="cats_url" method="post">
   <label for="name">Name</label>
-  <input id="name" type="text" name="cat[name]"> <!--points to the attribute-->
-  <br>
+  <input id="name" type="text" name="cat[name]"> <!points to the attribute-->
+  <!-- <br>
 
   <label for="sex">Sex</label>
    <button type="button" name="cat[sex]">F</button>
    <button type="button" name="cat[sex]">M</button>
-  <br>
+  <br> -->
 
-   <label for="color">Color</label>
+   <!-- <label for="color">Color</label>
    <select id="color" name="cat[color]">
-    <option disabled selected>--Please select a color--</option>
+    <option disabled selected>Please select a color</option>
     <%  %>
     <option value="black">Black</option>
     <option value="yellow">Yellow</option>
@@ -29,4 +31,4 @@
    <label for="description">Description</label>
    <textarea name="cat[description]"></textarea>
   <input type="submit" value="Add new cat">
-</form>
+</form> -->
